@@ -2,8 +2,8 @@
 Generate OTP from command line instead of Google Authenticator in mobile phone.
 
 # How to use
-1. Store secret in file for example `/home/mac/config`
-2. Run `java -jar my-google-auth.jar /home/mac/config`
+1. Store secret in config file for example `~/.my-google-auth`
+2. Run `java -jar my-google-auth.jar ~/.my-google-auth`
 3. OTP will be copy to your clipboard and it will be valid for 30 seconds.
 
 # Config file 
@@ -11,11 +11,19 @@ Generate OTP from command line instead of Google Authenticator in mobile phone.
 - secret : Your secret key
 - prefix-password (Optional) : Your static password. I recommend you leave it blank.
 
-## Example 
+# Example 
+
+File name : .my-google-auth
 
 ```yaml
 secret: ''
 prefix-password: ''
+```
+
+# Set alias 
+
+```
+alias mga="java -jar ~/Apps/my-google-auth.jar ~/.my-google-auth"
 ```
 
 # Credit
