@@ -9,7 +9,7 @@ Generate OTP from command line instead of Google Authenticator in mobile phone.
 # Config file 
 
 - secret : Your secret key
-- prefix-password (Optional) : Your static password. I recommend you leave it blank.
+- prefix-password (Optional) : Your static password. It will be prepend to OTP.
 
 # Example 
 
